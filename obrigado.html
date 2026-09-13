@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Acesso liberado · Mãe e Filha</title>
+  <meta name="theme-color" content="#07070a" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script>
+    !function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);},s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='https://static.ads-twitter.com/uwt.js',a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+    twq('config','rf6ha');
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      min-height: 100%;
+      background: #07070a;
+      color: #fff;
+      font-family: "Outfit", system-ui, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    .live-dot {
+      width: 10px; height: 10px; border-radius: 50%;
+      background: #2fe07a;
+      box-shadow: 0 0 8px 2px rgba(47, 224, 122, 0.7);
+      animation: dotblink 1.3s ease-in-out infinite;
+    }
+    @keyframes dotblink { 50% { opacity: 0.4; } }
+    .btn-main {
+      display: flex; align-items: center; justify-content: center; gap: 11px;
+      width: 100%; margin: 10px 0 0; padding: 18px; border: 0; border-radius: 999px;
+      font-family: inherit; font-size: 15px; font-weight: 700; letter-spacing: 1px;
+      text-transform: uppercase; color: #04381f; cursor: pointer;
+      background: linear-gradient(135deg, #a7f3c4 0%, #4be288 38%, #17b85f 72%, #0c9b4e 100%);
+      box-shadow: 0 14px 36px rgba(20, 180, 90, 0.45), inset 0 1px 0 rgba(255,255,255,0.5);
+      animation: pulseG 2.6s ease-in-out infinite;
+    }
+    .btn-main svg { width: 20px; height: 20px; fill: currentColor; }
+    @keyframes pulseG {
+      50% { box-shadow: 0 18px 48px rgba(47, 224, 122, 0.62), inset 0 1px 0 rgba(255,255,255,0.5); }
+    }
+    .thx {
+      position: relative; max-width: 480px; margin: 0 auto; min-height: 100dvh;
+      padding: 18px 22px 28px; text-align: center; overflow: hidden;
+    }
+    .thx-glow {
+      pointer-events: none; position: absolute; top: -80px; left: 50%;
+      width: 140%; height: 280px; transform: translateX(-50%);
+      background: radial-gradient(ellipse at center, rgba(90, 8, 18, 0.9), transparent 68%);
+    }
+    .thx-nav {
+      position: relative; z-index: 2; display: flex; justify-content: space-between;
+      align-items: center; margin-bottom: 36px; font-size: 12px; font-weight: 800; letter-spacing: 1px;
+    }
+    .thx-member {
+      display: inline-flex; align-items: center; gap: 8px; padding: 7px 12px;
+      border-radius: 999px; font-size: 12px; font-weight: 700; letter-spacing: 0;
+      background: rgba(18,18,22,.85); border: 1px solid rgba(255,255,255,.08);
+    }
+    .thx-status {
+      position: relative; z-index: 1; display: inline-flex; align-items: center; gap: 8px;
+      margin: 0 auto 22px; padding: 8px 14px; border-radius: 999px;
+      font-size: 11px; font-weight: 700; letter-spacing: 1.4px; text-transform: uppercase;
+      color: rgba(255,255,255,.82); background: rgba(18,18,22,.85); border: 1px solid rgba(255,255,255,.08);
+    }
+    .thx-name {
+      position: relative; z-index: 1; margin: 0 0 16px;
+      font-family: "Archivo Black", sans-serif; font-size: clamp(40px, 13vw, 56px);
+      line-height: 0.9; letter-spacing: -1px; color: #e10600;
+    }
+    .thx-name span { display: block; }
+    .thx-copy {
+      position: relative; z-index: 1; margin: 0 auto 22px; max-width: 340px;
+      font-size: 16px; line-height: 1.5; color: rgba(255,255,255,.62);
+    }
+    .thx-form { position: relative; z-index: 1; max-width: 400px; margin: 0 auto; }
+    .thx-foot {
+      position: relative; z-index: 1; margin: 12px 0 26px; font-size: 12px;
+      color: rgba(255,255,255,.38);
+    }
+    .thx-end {
+      position: relative; z-index: 1; margin: 28px 0 8px;
+      font-size: 10px; font-weight: 700; letter-spacing: 1.6px;
+      text-transform: uppercase; color: rgba(255,255,255,.28);
+    }
+  </style>
+</head>
+<body>
+  <div class="thx">
+    <div class="thx-glow"></div>
+    <header class="thx-nav">
+      <span>MÃE E FILHA</span>
+      <span class="thx-member"><span class="live-dot"></span> Membro · VIP</span>
+    </header>
+    <div class="thx-status"><span class="live-dot"></span> Pagamento confirmado</div>
+    <h1 class="thx-name">MÃE E<span>FILHA</span></h1>
+    <p class="thx-copy" id="copy">Seu acesso VIP foi liberado. Clique no botão abaixo e entre no grupo privado do Telegram.</p>
+    <form class="thx-form" id="go">
+      <button class="btn-main" type="submit">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 1a5 5 0 00-5 5v3H6a2 2 0 00-2 2v9a2 2 0 002 2h12a2 2 0 002-2v-9a2 2 0 00-2-2h-1V6a5 5 0 00-5-5zm3 8H9V6a3 3 0 016 0v3z"/></svg>
+        Acesso liberado
+      </button>
+    </form>
+    <p class="thx-foot">Acesso exclusivo para membros confirmados</p>
+    <p class="thx-end">Pagamento aprovado · Pedido confirmado na rede</p>
+  </div>
+  <script>
+    (function () {
+      var EVENT_ID = "tw-rf6ha-rf8wi";
+      var VIP = "https://t.me/+O7kW9uL1otE4ZjMx";
+      var BUMP = "https://t.me/+X8x_eQriafoxMjYx";
+      var ALLOWED = { "4.90":1,"4.9":1,"5":1,"5.0":1,"5.00":1,"9.90":1,"9.9":1,"14.90":1,"14.9":1 };
+      var params = new URLSearchParams(location.search);
+      var raw = (params.get("valor") || params.get("v") || "").replace(",", ".").trim();
+      var isBump = params.get("tipo") === "bump" || raw === "5" || raw === "5.0" || raw === "5.00";
+      var dest = isBump ? BUMP : VIP;
+      var value = ALLOWED[raw] ? Number(raw) : (isBump ? 5 : 0);
+      var fired = false;
+      var conversionId = (crypto.randomUUID && crypto.randomUUID()) || (Date.now() + "-" + Math.random().toString(16).slice(2));
+      if (isBump) {
+        document.getElementById("copy").textContent = "Seu extra foi liberado. Clique no botão abaixo e entre no grupo privado do Telegram.";
+      }
+      function getTwclid() {
+        var fromUrl = new URLSearchParams(location.search).get("twclid");
+        if (fromUrl) { try { localStorage.setItem("twclid", fromUrl); } catch (e) {} return fromUrl; }
+        try { return localStorage.getItem("twclid") || undefined; } catch (e) { return undefined; }
+      }
+      function fire() {
+        if (fired) return;
+        fired = true;
+        var payload = { conversion_id: conversionId, currency: "BRL" };
+        if (value) payload.value = value;
+        if (typeof window.twq === "function") window.twq("event", EVENT_ID, payload);
+        var body = JSON.stringify({
+          eventId: EVENT_ID,
+          conversionId: conversionId,
+          twclid: getTwclid(),
+          eventSourceUrl: location.href,
+          value: value || undefined
+        });
+        var blob = new Blob([body], { type: "application/json" });
+        var ok = navigator.sendBeacon && navigator.sendBeacon("/api/x-capi", blob);
+        if (!ok) {
+          fetch("/api/x-capi", { method: "POST", headers: { "Content-Type": "application/json" }, body: body, keepalive: true }).catch(function () {});
+        }
+      }
+      getTwclid();
+      document.getElementById("go").addEventListener("submit", function (e) {
+        e.preventDefault();
+        fire();
+        window.location.href = dest;
+      });
+      window.addEventListener("pagehide", fire);
+    })();
+  </script>
+</body>
+</html>
